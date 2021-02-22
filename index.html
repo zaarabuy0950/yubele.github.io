@@ -10,6 +10,13 @@
             text-align: center;
             background-color: aquamarine;
         }
+        table, th, td{
+            width: 300px;
+            height: 45px;
+            color: brown;
+            border: 1px solid goldenrod;
+
+        }
     </style>
 </head>
 <body>
@@ -31,10 +38,41 @@
 <a class="twitter-timeline" data-width="100" data-height="100" 
 href="https://twitter.com/GhimireZaarabuy?ref_src=twsrc%5Etfw">Tweets by GhimireZaarabuy</a> 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<div>
+    <table align="center">
+        <h2>My Projects</h2>
+        <thead>
+            <tr>
+                <th>
+                    <h3>Projects</h3>
+                </th>
+               <th><h3>Link</h3></th>   
+            </tr>
+
+        </thead>
+<tbody>
+            <tr>
+                <td>yubele.github.io</td>
+                
+                <td><a href="https://github.com/zaarabuy0950/yubele.github.io">link1</a></td>
+            </tr>
+
+            <tr>
+                <td>yuvi</td>
+                
+                <td><a href="https://github.com/zaarabuy0950/yuvi">link2</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 </div>
 
+
+
+
 <script>
-fetch("https://api.github.com/users/zaarabuy0950")
+fetch("https://api.github.com/users/yubele.github.io")
 .then(response => response.json())
 .then(function(data){
     console.log(data)
