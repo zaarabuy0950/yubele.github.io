@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +28,8 @@
     <img 
     height="200"
     width="200"
-    id="profileImage">
+    id="profileImage"
+    >
     <h2 id="fullName"></h2>
     <p id="bio"></p>
     <h5 id="followersInformation"></h5>
@@ -71,7 +73,7 @@ href="https://twitter.com/GhimireZaarabuy?ref_src=twsrc%5Etfw">Tweets by Ghimire
 
 
 <script>
-fetch("https://zaarabuy0950.github.io/yubele.github.io/")
+fetch("https://api.github.com/users/yubele.github.io")
 .then(response => response.json())
 .then(function(data){
     console.log(data)
